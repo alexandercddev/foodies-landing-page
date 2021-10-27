@@ -5,7 +5,20 @@
 **/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 * {
+  margin: 0px;
+  padding: 0px;
   font-family: "Open Sans", sans-serif;
+}
+
+header > div.head {
+  display: flex;
+}
+header > div.head > nav > ul {
+  display: flex;
+}
+li {
+  list-style: none;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
