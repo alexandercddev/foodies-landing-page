@@ -10,15 +10,553 @@
   font-family: "Open Sans", sans-serif;
 }
 
-header > div.head {
+header {
+  background-image: url("../images/banner.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position-y: -25px;
+  background-size: 100% 100%;
+}
+header > div {
   display: flex;
+  justify-content: center;
+}
+header > div.head {
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+header > div.head > div {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+header > div.head > nav {
+  display: flex;
+  align-items: center;
 }
 header > div.head > nav > ul {
   display: flex;
 }
+header > div.head > nav > ul > li.active > a {
+  color: #0abd52;
+}
+header > div.head-content {
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+header > div.head-content > div.content-col-l {
+  min-width: 300px;
+  max-width: 650px;
+}
+header > div.head-content > div.content-col-r {
+  display: flex;
+  justify-content: flex-end;
+}
+header > div.head-content > div > h2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+header > div.head-content > div > p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+div.logo {
+  display: flex;
+  align-items: center;
+}
+div.logo > svg.icon {
+  width: 30px;
+  height: 30px;
+}
+div.logo > div.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.content-col {
+  width: 50%;
+}
+.content-col.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-col.title > h3 {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+}
+.content-col.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-col > h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+  width: 300px;
+}
+.content-col > h3.title-green {
+  font-weight: 600;
+  font-size: 27px;
+  text-transform: uppercase;
+}
+.content-col.person {
+  display: flex;
+}
+.content-col.person > div.content-image {
+  width: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+.content-col.person > div.content-image > img {
+  width: 100%;
+}
+.content-col.person > div.content-image > div.images-description {
+  cursor: pointer;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin-top: -75px;
+}
+.content-col.person > div.content-image > div.images-description > span.name {
+  font-size: 14px;
+}
+.content-col.person > div.content-image > div.images-description > span.description {
+  font-size: 13px;
+}
+.content-col.person > div.content-image > div.images-description:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content-col.read-me {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.content-col.read-me > div.card-menu {
+  width: 50%;
+  display: flex;
+  margin-bottom: 20px;
+}
+.content-col.read-me > div.card-menu > div {
+  padding-left: 10px;
+}
+.content-col.read-me > div.card-menu > div.card-icon > div {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6f9ed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.section-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.section-container.green > div {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.section-container.green > div.content-col {
+  margin: auto;
+}
+.section-container.green > div.content-col.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-container.green > div.content-col > div.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/video.jpg");
+  width: 425px;
+  height: 300px;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.section-container.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-container.cards > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.section-container.cards > div > div.card-blog {
+  width: 240px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.section-container.cards > div > div.card-blog > div {
+  width: 100%;
+}
+.section-container.cards > div > div.card-blog > div.card-date {
+  width: fit-content;
+  background-color: #ebfaf1;
+  color: #0abd52;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.section-container.cards > div > div.card-blog > div.card-content > div > img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+.section-container.cards > div > div.card-blog > div.card-content > p {
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+}
+.section-container.cards > div > div.card-blog > div.card-content > div {
+  display: flex;
+  align-items: center;
+}
+.section-container.cards > div > div.card-blog > div.card-content > div > svg {
+  width: 15px;
+  height: 15px;
+}
+.section-container.cards > div > div.card-blog > div.card-content > div > span {
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 600;
+}
+.section-container.cards > div > div.card-contact {
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-container.cards > div > div.card-contact > div.card-icon > svg {
+  width: 30px;
+  height: 30px;
+}
+.section-container.cards > div > div.card-contact > div.card-icon > svg > svg > path {
+  fill: #fabe29;
+}
+.section-container.cards > div > div.card-contact > div.card-content > h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.section-container.cards > div > div.card-contact > div.card-content > p {
+  text-align: center;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section > div.section-container {
+  display: flex;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+section > div.section-container.green {
+  background-color: #f2fdf7;
+}
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone > span.icon-span {
+  width: 25px;
+  height: 25px;
+}
+.phone > span.icon-span > svg {
+  width: 100%;
+  height: 100%;
+}
+.phone > span.icon-span > svg > svg > path {
+  fill: #000;
+}
+.phone > span:nth-child(2) {
+  padding: 10px;
+  font-weight: 700;
+  color: #000;
+}
+.phone > button {
+  margin-left: 10px;
+}
+
+.promocode {
+  height: 600px;
+  justify-content: flex-end !important;
+}
+.promocode::before {
+  content: " ";
+  position: absolute;
+  background-image: url("../images/promo.png");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position-y: -10px;
+  left: 0;
+}
+.promocode::after {
+  content: " ";
+  position: absolute;
+  background-image: url("../images/img3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  left: 0;
+  z-index: 100;
+  width: 400px;
+  height: 600px;
+}
+.promocode > div {
+  margin-top: 100px;
+  z-index: 100;
+}
+.promocode > div > div.container-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.promocode > div > div.container-code > span {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.promocode > div > div.container-code > h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.pre-footer > div > p {
+  margin-top: 20px;
+}
+.pre-footer > div > ul.categories {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.pre-footer > div > ul.categories > li > a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.pre-footer > div > ul.categories > li > a > svg {
+  width: 15px;
+  height: 15px;
+}
+.pre-footer > div > div.card-contact {
+  margin-top: 10px;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
+  width: 285px;
+}
+.pre-footer > div > div.card-contact > div.card-content {
+  padding: 10px;
+}
+.pre-footer > div > div.card-contact > div.card-content > div > div.group-input > input {
+  width: 150px;
+  height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 20px;
+}
+.pre-footer > div > div.card-contact > div.card-content > div > div.group-input > button {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  margin-left: -10px;
+}
+.pre-footer > div > div.card-contact > div.card-content > div > div.group-input > button > svg {
+  width: 15px;
+  height: 15px;
+}
+.pre-footer > div > div.card-contact > div.card-content > div > div.group-input > button > svg > svg > path {
+  fill: #fff;
+}
+
+footer {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgba(0, 0, 0, 0.5);
+}
+footer > div > span {
+  color: #0abd52;
+}
+footer > div > span#year {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.group-input-c > label {
+  font-weight: bold;
+}
+.group-input-c > div.group-input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.group-input-c > div.group-input > input {
+  width: 250px;
+  height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-left: 20px;
+}
+.group-input-c > div.group-input > button {
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  margin-left: -10px;
+}
+
+.dropDown {
+  display: none;
+  position: absolute;
+}
+
 li {
   list-style: none;
   margin: 5px;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+svg > svg > path {
+  fill: #0abd52;
+}
+
+button.bt {
+  cursor: pointer;
+  background-color: #0abd52;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+}
+button.bt:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+button.bt-read {
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+button.bt-read:hover {
+  transform: scale(1.1);
+}
+button.bt-play {
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  color: #000;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgba(10, 189, 82, 0.5);
+  border-radius: 100%;
+}
+button.bt-play > svg {
+  width: 100%;
+  height: 100%;
+}
+button.bt-play > svg > svg > path {
+  fill: #fff;
+}
+button.bt-icon {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin: 10px;
+}
+button > svg > svg > path {
+  fill: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a.bt-fab {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+a.bt-fab > svg {
+  width: 15px;
+  height: 15px;
+}
+a.bt-fab > svg > svg > path {
+  fill: #fff;
+}
+a.bt-fab:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+a.bt-fab.bt-sm {
+  background-color: #e6f9ed;
+}
+a.bt-fab.bt-sm > svg > svg > path {
+  fill: #0abd52;
+}
+
+.actions {
+  display: flex;
+}
+
+p {
+  color: #5b6e8a;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+iframe {
+  display: none;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -24,12 +24,13 @@
 <body>
     <header id="home">
         <div class="head">
-            <div>
-                <div class="">Foodies</div>
+            <div class="logo">
+                <svg class="icon" data-src="./src/assets/svgs/utensils-solid.svg"></svg>
+                <div class="title">Foodies</div>
             </div>
             <nav>
                 <ul>
-                    <li>
+                    <li class="active">
                         <a href="#home">Home</a>
                     </li>
                     <li>
@@ -40,7 +41,7 @@
                     </li>
                     <li>
                         <span>Pages</span>
-                        <ul>
+                        <ul class="dropDown">
                             <li>
                                 <a href="#page1">Page 1</a>
                             </li>
@@ -58,12 +59,16 @@
                 </ul>
             </nav>
             <div>
-                <button id="search" class="bt-icon"></button>
-                <button id="moon" class="bt-icon"></button>
+                <button id="search" class="bt-icon">
+                    <svg class="icon" data-src="./src/assets/svgs/search-solid.svg"></svg>
+                </button>
+                <button id="moon" class="bt-icon">
+                    <svg class="icon" data-src="./src/assets/svgs/moon-regular.svg"></svg>
+                </button>
             </div>
         </div>
         <div class="head-content">
-            <div class="content-col">
+            <div class="content-col-l">
                 <h2>Eat Freash</h2>
                 <h2>Eat Healthy</h2>
                 <p>
@@ -71,7 +76,7 @@
                 </p>
                 <button class="bt bt-green">View Our Menu</button>
             </div>
-            <div class="content-col">
+            <div class="content-col-r">
                 <img alt="Foodies Image - Banner IMG" src="./src/assets/images/bannerimg.png" width="320" height="300"/>
             </div>
         </div>
@@ -79,16 +84,16 @@
     <main>
         <section id="about" class="section-content">
             <div class="section-container">
-                <div class="content-col">
+                <div class="content-col image">
                     <img alt="Foodies - About" src="./src/assets/images/about.png" width="340" height="211"/>
                 </div>
                 <div class="content-col">
                     <h3>Welcome To Our <b>Foodies</b></h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum inventore molestias est aliquam quaerat? Quam ipsam cum explicabo vero ratione! Assumenda id veritatis sequi iste natus rerum impedit iure!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam voluptatum inventore molestias est aliquam quaerat?
                     </p>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime obcaecati sunt totam iusto provident hic rem odio inventore voluptates voluptate optio mollitia eius architecto at ab pariatur, omnis exercitationem nulla.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime obcaecati sunt totam iusto provident hic rem odio inventore voluptates voluptate optio mollitia eius architecto at ab pariatur.
                     </p>
                     <button class="bt bt-green">Read More</button>
                 </div>
@@ -96,14 +101,15 @@
         </section>
         <section id="menu" class="section-content">
             <div class="section-container">
-                <div class="content-col">
+                <div class="content-col title">
                     <h3>
                         Hello. Our structure
-                        has been present <form action="over 20 years. We
-                        make the best!"></form>
+                        has been present for 
+                        over 20 years. We
+                        make the best!
                     </h3>
                 </div>
-                <div class="content-col">
+                <div class="content-col person">
                     <div class="content-image">
                         <img alt="Jimc Nasium - Best chef" src="./src/assets/images/team1.jpg"/>
                         <div class="images-description">
@@ -121,56 +127,64 @@
                 </div>
             </div>
             <div class="section-container">
-                <div class="content-col">
+                <div class="content-col read-me">
                     <div class="card-menu">
                         <div class="card-icon">
-                            <i class="icon "></i>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/utensils-solid.svg"></svg>
+                            </div>
                         </div>
                         <div class="card-content">
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum quidem voluptatibus, aliquam placeat alias ipsum iure? Voluptatum aliquid rem impedit officia magnam, enim quisquam quos nulla sint libero iure!  
                             </p>
-                            <button class="bt">Read me</button>
+                            <button class="bt-read">Read more</button>
                         </div>
                     </div>
                     <div class="card-menu">
                         <div class="card-icon">
-                            <i class="icon "></i>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/coffee-solid.svg"></svg>
+                            </div>
                         </div>
                         <div class="card-content">
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum quidem voluptatibus, aliquam placeat alias ipsum iure? Voluptatum aliquid rem impedit officia magnam, enim quisquam quos nulla sint libero iure!  
                             </p>
-                            <button class="bt">Read me</button>
+                            <button class="bt-read">Read me</button>
                         </div>
                     </div>
                     <div class="card-menu">
                         <div class="card-icon">
-                            <i class="icon "></i>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/beer-solid.svg"></svg>
+                            </div>
                         </div>
                         <div class="card-content">
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum quidem voluptatibus, aliquam placeat alias ipsum iure? Voluptatum aliquid rem impedit officia magnam, enim quisquam quos nulla sint libero iure!  
                             </p>
-                            <button class="bt">Read me</button>
+                            <button class="bt-read">Read me</button>
                         </div>
                     </div>
                     <div class="card-menu">
                         <div class="card-icon">
-                            <i class="icon "></i>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/apple-brands.svg"></svg>
+                            </div>
                         </div>
                         <div class="card-content">
                             <p>
                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum quidem voluptatibus, aliquam placeat alias ipsum iure? Voluptatum aliquid rem impedit officia magnam, enim quisquam quos nulla sint libero iure!  
                             </p>
-                            <button class="bt">Read me</button>
+                            <button class="bt-read">Read me</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-container">
+            <div class="section-container green">
                 <div class="content-col">
-                    <h3>
+                    <h3 class="title-green">
                         You can watch our
                         cooking video 
                         process!
@@ -180,18 +194,18 @@
                     </p>
                     <button class="bt bt-green">Play Video</button>
                 </div>
-                <div class="content-col">
+                <div class="content-col video">
                     <div class="video">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/T2a5gPn-iNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <div>
-                            <button class="bt bt-play">
-                                <i class="icon "></i>
+                            <button class="bt-play">
+                                <svg data-src="./src/assets/svgs/play-circle-regular.svg"></svg>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-container">
+            <div class="section-container cards">
                 <h3>Blog post</h3>
                 <div class="content-col">
                     <div class="card-blog">
@@ -199,11 +213,16 @@
                             May 10, 2021
                         </div>
                         <div class="card-content">
-                            <img alt="" src="./src/assets/images/blog1.jpg" />
+                            <div class="card-image">
+                                <img alt="" width="240" height="170" src="./src/assets/images/blog1.jpg" />
+                            </div>
                             <p>
                                 Hello world! you can read my post recent recipe
                             </p>
-                            <i class="icon "></i> <span>Null Spect</span>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/user-circle-solid.svg"></svg>
+                                <span>Nulla Spect</span>
+                            </div>  
                         </div>
                     </div>
                     <div class="card-blog">
@@ -211,11 +230,16 @@
                             May 10, 2021
                         </div>
                         <div class="card-content">
-                            <img alt="" src="./src/assets/images/blog2.jpg" />
+                            <div class="card-image">
+                                <img alt="" width="240" height="170" src="./src/assets/images/blog2.jpg" />
+                            </div> 
                             <p>
                                 Cras fringilla, enim a porta fermentum
                             </p>
-                            <i class="icon "></i> <span>Joe Smith</span>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/user-circle-solid.svg"></svg>
+                                <span>Joe Smith</span>
+                            </div> 
                         </div>
                     </div>
                     <div class="card-blog">
@@ -223,126 +247,162 @@
                             May 10, 2021
                         </div>
                         <div class="card-content">
-                            <img alt="" src="./src/assets/images/blog3.jpg" />
+                            <div class="card-image">
+                                <img alt="" width="240" height="170" src="./src/assets/images/blog3.jpg" />
+                            </div>
                             <p>
                                 The Best Cookie Recipes To Bake This weekend
                             </p>
-                            <i class="icon "></i> <span>Abigail Jones</span>
+                            <div>
+                                <svg class="icon" data-src="./src/assets/svgs/user-circle-solid.svg"></svg>
+                                <span>Abigail Jones</span>
+                            </div>  
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="contact" class="section-content">
-            <div class="section-container">
+            <div class="section-container green">
                 <div class="content-col">
-                    <h3>Contact us now!</h3>
+                    <h3 class="title-green">Contact us now!</h3>
                     <p>For Online queris, please call us today</p>
                 </div>
                 <div class="content-col">
-                    <p>
-                        <i class="icon "></i>
+                    <p class="phone">
+                        <span class="icon-span">
+                            <svg data-src="./src/assets/svgs/phone-volume-solid.svg"></svg>
+                        </span>
                         <span>+1(23)456 789 0000</span> 
                         Or 
                         <button class="bt bt-green">Get in touch</button>
                     </p>
                 </div>
             </div>
-            <div class="section-container">
+            <div class="section-container cards">
                 <div class="content-col">
                     <div class="card-contact">
-                        <i class="icon "> </i>
+                        <div class="card-icon ">
+                            <svg class="icon" data-src="./src/assets/svgs/motorcycle-solid.svg"></svg>
+                        </div>
                         <div class="card-content">
                             <h4>Fast Delivery</h4>
                             <p> 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio repellat maiores, atque, quaerat quisquam totam unde ex vitae vero tenetur debitis minus voluptatum cum nostrum sed quae.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio
                             </p> 
                         </div>
                     </div>
                     <div class="card-contact">
-                        <i class="icon "> </i>
+                        <div class="card-icon ">
+                            <svg class="icon" data-src="./src/assets/svgs/shopping-basket-solid.svg"></svg>
+                        </div>
                         <div class="card-content">
                             <h4>Fresh Ingredients</h4>
                             <p> 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio repellat maiores, atque, quaerat quisquam totam unde ex vitae vero tenetur debitis minus voluptatum cum nostrum sed quae.
-                            </p> 
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio
+                            </p>
                         </div>
                     </div>
                     <div class="card-contact">
-                        <i class="icon "> </i>
+                        <div class="card-icon ">
+                            <svg class="icon" data-src="./src/assets/svgs/laptop-solid.svg"></svg>
+                        </div>
                         <div class="card-content">
                             <h4>Online Suport 24/7</h4>
                             <p> 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio repellat maiores, atque, quaerat quisquam totam unde ex vitae vero tenetur debitis minus voluptatum cum nostrum sed quae.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi quibusdam, optio
                             </p> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section-container">
-                <div class="content-col">
-                    <span>for 30% discount</span>
-                    <h2>get our promocode now</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nam ex officiis. Minima reiciendis nobis, quidem, enim quisquam dicta ex officia sit error doloremque reprehenderit earum vel nihil, quasi neque!
-                    </p>
-                    <div class="group-input">
-                        <label>
-                            Never Miss a Deal From Foodies
-                        </label>
-                        <input type="email" name="emaiId" id="emailId" />
-                        <button class="bt bt-green bt-group">Get Promocode</button>
+            <div class="section-container promocode">
+                <div class="content-col"> 
+                    <div class="container-code">
+                        <span>for 30% discount</span>
+                        <h2>get our promocode now</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nam ex officiis. Minima reiciendis nobis, quidem, enim quisquam dicta ex officia sit error doloremque reprehenderit earum vel nihil, quasi neque!
+                        </p>
+                        <div class="group-input-c">
+                            <label>
+                                Never Miss a Deal From Foodies
+                            </label>
+                            <div class="group-input">
+                                <input type="email" name="emaiCode" id="emailCode" />
+                                <button id="btn-get-code" class="bt bt-green bt-group">Get Promocode</button>
+                            </div>
+                        </div>
+                        <p>(Or) To Get Our Mobile Apps</p>
+                        <div class="actions">
+                            <a href="" class="bt-fab">
+                                <svg class="icon" data-src="./src/assets/svgs/apple-brands.svg"></svg>
+                            </a>
+                            <a href="" class="bt-fab">
+                                <svg class="icon" data-src="./src/assets/svgs/play-solid.svg"></svg>
+                            </a>
+                            <a href="" class="bt-fab">
+                                <svg class="icon" data-src="./src/assets/svgs/windows-brands.svg"></svg>
+                            </a> 
+                        </div>
                     </div>
-                    <p>(Or) To Get Our Mobile Apps</p>
-                    <p>
-                        <a href="" class="bt bt-fab">
-                            <i class="icon "></i>
-                        </a>
-                        <a href="" class="bt bt-fab">
-                            <i class="icon "></i>
-                        </a>
-                        <a href="" class="bt bt-fab">
-                            <i class="icon "></i>
-                        </a> 
-                    </p>
                 </div>
             </div>
-            <div class="section-container">
+            <div class="section-container pre-footer">
                 <div class="content-col">
-                    <h3>
-                        <i class="icon "></i> 
-                        Foodies
-                    </h3>
+                    <div class="logo">
+                        <svg class="icon" data-src="./src/assets/svgs/utensils-solid.svg"></svg>
+                        <div class="title">Foodies</div>
+                    </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi at cupiditate molestiae, quos eaque sint natus nobis ea asperiores incidunt facilis facere itaque ducimus repellendus quisquam, eius ipsa laborum?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi at cupiditate molestiae, quos
                     </p>
                 </div>
                 <div class="content-col">
                     <h4>
                         Categories
                     </h4>
-                    <ul>
-                        <li>
-                            <a href="">Food</a>
+                    <ul class="categories">
+                        <li >
+                            <a href="">
+                                <svg class="icon" data-src="./src/assets/svgs/chevron-right-solid.svg"></svg>
+                                Food
+                            </a>
                         </li> 
                         <li>
-                            <a href="">Non-Veg</a>
+                            <a href="">
+                                <svg class="icon" data-src="./src/assets/svgs/chevron-right-solid.svg"></svg>
+                                Non-Veg
+                            </a>
                         </li> 
                         <li>
-                            <a href="">Taste</a>
+                            <a href="">
+                                <svg class="icon" data-src="./src/assets/svgs/chevron-right-solid.svg"></svg>
+                                Taste
+                            </a>
                         </li>
                         <li>
-                            <a href="">May 2021</a>
+                            <a href="">
+                                <svg class="icon" data-src="./src/assets/svgs/chevron-right-solid.svg"></svg>
+                                May 2021
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="content-col">
+                    <h4>
+                        Newsletter
+                    </h4>
                     <div class="card-contact"> 
                         <div class="card-content">
-                            <h4>Subcribe Here Now</h4>
-                            <div class="group-input"> 
-                                <input type="email" name="emai" id="email" />
-                                <button class="bt bt-green bt-group">Get Promocode</button>
+                            <div class="group-input-c"> 
+                                <label>Subcribe Here Now</label>
+                                <div class="group-input"> 
+                                    <input type="email" name="emaiSend" id="emailSend" />
+                                    <button id="btn-send-mail" class="bt bt-green bt-group">
+                                        <svg class="icon" data-src="./src/assets/svgs/paper-plane-solid.svg"></svg>
+                                    </button>
+                                </div>
                             </div>
                             <p> 
                                 Subscribe to our mailing list and get
@@ -358,27 +418,24 @@
         <div>
             © <span id="year"></span> Foodies. All Rights Reserved | Designed by <span>Foodies.</span>
         </div>
-        <div>
-            <a href="" class="bt bt-fab">
-                <i class="icon "></i>
+        <div class="actions">
+            <a href="" class="bt-sm bt-fab">
+                <svg class="icon" data-src="./src/assets/svgs/facebook-f-brands.svg"></svg>
             </a>
-            <a href="" class="bt bt-fab">
-                <i class="icon "></i>
+            <a href="" class="bt-sm bt-fab">
+                <svg class="icon" data-src="./src/assets/svgs/linkedin-in-brands.svg"></svg>
             </a>
-            <a href="" class="bt bt-fab">
-                <i class="icon "></i>
+            <a href="" class="bt-sm bt-fab">
+                <svg class="icon" data-src="./src/assets/svgs/twitter-brands.svg"></svg>
             </a>
-            <a href=""class="bt bt-fab">
-                <i class="icon "></i>
+            <a href=""class="bt-sm bt-fab">
+                <svg class="icon" data-src="./src/assets/svgs/google-plus-g-brands.svg"></svg>
             </a>
-            <a href="" class="bt bt-fab">
-                <i class="icon "></i>
+            <a href="" class="bt-sm bt-fab">
+                <svg class="icon" data-src="./src/assets/svgs/github-brands.svg"></svg>
             </a>
         </div>
-    </footer>
-    <a href="#home" class="bt bt-fab">
-        regresar
-    </a>
+    </footer> 
 </body>
 <script src="./src/assets/javascripts/app.js"></script>
 </html>
